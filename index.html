@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeric Keypad</title>
+    <style>
+        body{
+            margin:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background-color: aliceblue;
+        }
+        .button {
+            border: 0;
+            border-radius: 30px;
+            color: white;
+            background-color: rgb(32, 34, 35);
+            cursor: pointer;
+            width: 70px;
+            height: 40px;
+        }
+        #line{
+            grid-column: span 4;
+            text-align: right;
+            font-size: 35px;
+        }
+        #full {
+            display:grid;
+            grid-template-columns: repeat(4,auto);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color:white;
+            border-radius: 9px;
+            padding: 20px;
+            padding-top: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        #buttonop{
+            background-color: aquamarine;
+            font-size: 27px;
+        }
+        #buttonequal{
+            background-color: bisque;
+            font-size: 27px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="full">
+        <p id="line">|</p>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button id="buttonop" class="button">÷</button>
+        <button class="button">4</button>
+        <button class="button">5</button> 
+       <button class="button">6</button>
+        <button id="buttonop" class="button">×</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button id="buttonop" class="button">-</button>
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button id="buttonequal" class="button">=</button>
+        <button id="buttonop" class="button">+</button>
+    </div>
+</body>
+</html>
